@@ -24,6 +24,16 @@ public class CodingNomadConfiguration {
     }
 
     @Bean
+    public Brain devBrain() {
+        return Brain.builder().type("powerful").build();
+    }
+
+    @Bean
+    public Personality devPersonality() {
+        return Personality.builder().type("resilient").build();
+    }
+
+    @Bean
     public OperatingSystem operatingSystem() {
         return OperatingSystem.builder().name("macOS").version("11.4").build();
     }
